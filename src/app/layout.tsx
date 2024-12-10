@@ -34,7 +34,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
 					<Script
 						async
 						src="/stats/script.js"
-						data-host-url={publicUrl + "/stats"}
+						data-host-url={env.NEXT_PUBLIC_UMAMI_HOST}
 						data-website-id={env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
 					/>
 				)}

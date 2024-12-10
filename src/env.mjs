@@ -29,6 +29,8 @@ export const env = createEnv({
 		NEXT_PUBLIC_NEWSLETTER_ENDPOINT: z.string().optional(),
 
 		NEXT_PUBLIC_LANGUAGE: z.string().optional().default("en-US"),
+
+		NEXT_PUBLIC_UMAMI_HOST: z.string().optional(),
 	},
 	runtimeEnv: {
 		STRIPE_SECRET_KEY: process.env.STRIPE_SECRET_KEY,
@@ -46,6 +48,8 @@ export const env = createEnv({
 		TRIEVE_API_KEY: process.env.TRIEVE_API_KEY,
 
 		NEXT_PUBLIC_LANGUAGE: process.env.NEXT_PUBLIC_LANGUAGE,
+
+		NEXT_PUBLIC_UMAMI_HOST: process.env.NEXT_PUBLIC_UMAMI_HOST,
 	},
 });
 
